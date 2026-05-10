@@ -1,0 +1,311 @@
+‎<!DOCTYPE html>
+‎<html lang="fr">
+‎<head>
+‎  <meta charset="UTF-8">
+‎  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎  <title>Baby Cash Coin</title>
+‎
+‎  <link rel="stylesheet" href="style.css">
+‎
+‎  <link rel="stylesheet"
+‎  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+‎</head>
+‎<body>
+‎
+‎  <!-- BACKGROUND -->
+‎  <div class="animated-bg">
+‎    <span></span>
+‎    <span></span>
+‎    <span></span>
+‎    <span></span>
+‎    <span></span>
+‎    <span></span>
+‎  </div>
+‎
+‎  <div class="app">
+‎
+‎    <!-- HEADER -->
+‎    <header class="header">
+‎
+‎      <div>
+‎        <p class="hello">Bonjour 👋</p>
+‎
+‎        <div class="badge-box">
+‎          <div>
+‎            <h3>🥉 Badge Bronze</h3>
+‎            <p>Niveau 1</p>
+‎          </div>
+‎
+‎          <div class="xp-box">
+‎            <div class="xp-bar"></div>
+‎          </div>
+‎        </div>
+‎      </div>
+‎
+‎      <div class="header-right">
+‎
+‎        <button class="theme-btn" id="themeBtn">
+‎          <i class="fa-solid fa-moon"></i>
+‎        </button>
+‎
+‎        <div class="bcc-icon">
+‎          <div class="bcc-core"></div>
+‎        </div>
+‎
+‎      </div>
+‎
+‎    </header>
+‎
+‎    <!-- HOME -->
+‎    <section id="homeSection">
+‎
+‎      <!-- BALANCE -->
+‎      <section class="balance-card">
+‎
+‎        <div class="bridge"></div>
+‎        <div class="light-effect"></div>
+‎
+‎        <p class="balance-title">Solde principal</p>
+‎
+‎        <h1 class="balance">0 BCC</h1>
+‎
+‎        <p class="cfa">≈ 0 CFA</p>
+‎
+‎      </section>
+‎
+‎      <!-- REWARD BTN -->
+‎      <button class="reward-btn action-popup">
+‎        💸 Récupérer mes gains
+‎      </button>
+‎
+‎      <!-- ACTIONS -->
+‎      <section class="actions">
+‎
+‎        <button class="action-btn action-popup">
+‎          <i class="fa-solid fa-paper-plane"></i>
+‎          <span>Envoyer</span>
+‎        </button>
+‎
+‎        <button class="action-btn action-popup">
+‎          <i class="fa-solid fa-download"></i>
+‎          <span>Recevoir</span>
+‎        </button>
+‎
+‎        <button class="action-btn action-popup">
+‎          <i class="fa-solid fa-qrcode"></i>
+‎          <span>Scanner</span>
+‎        </button>
+‎
+‎        <button class="action-btn action-popup">
+‎          <i class="fa-solid fa-arrows-rotate"></i>
+‎          <span>Convertir</span>
+‎        </button>
+‎
+‎      </section>
+‎
+‎      <!-- HISTORY -->
+‎      <section class="history">
+‎
+‎        <div class="history-empty">
+‎          <i class="fa-solid fa-clock-rotate-left"></i>
+‎          <h3>Aucun historique disponible</h3>
+‎          <p>Vos transactions apparaîtront ici</p>
+‎        </div>
+‎
+‎      </section>
+‎
+‎      <button class="service-btn action-popup">
+‎        Service Client
+‎      </button>
+‎
+‎      <button class="logout-btn action-popup">
+‎        Se déconnecter
+‎      </button>
+‎
+‎    </section>
+‎
+‎    <!-- CADEAUX -->
+‎    <section class="page-section hidden" id="giftSection">
+‎
+‎      <div class="gift-header">
+‎        <h2>🎁 Récompenses BCC</h2>
+‎        <p>Bienvenue sur votre portefeuille de récompense numérique BCC</p>
+‎      </div>
+‎
+‎      <!-- REWARD DASH -->
+‎      <div class="reward-grid">
+‎
+‎        <button class="reward-card action-popup">
+‎          <i class="fa-solid fa-coins"></i>
+‎          <span>Gains du jour</span>
+‎        </button>
+‎
+‎        <button class="reward-card action-popup">
+‎          <i class="fa-solid fa-fire"></i>
+‎          <span>Série connexion</span>
+‎        </button>
+‎
+‎        <button class="reward-card action-popup">
+‎          <i class="fa-solid fa-trophy"></i>
+‎          <span>Classement</span>
+‎        </button>
+‎
+‎        <button class="reward-card action-popup">
+‎          <i class="fa-solid fa-gift"></i>
+‎          <span>Bonus actifs</span>
+‎        </button>
+‎
+‎      </div>
+‎
+‎      <!-- WHEEL -->
+‎      <div class="wheel-box">
+‎
+‎        <h3>🎡 Roue de la chance</h3>
+‎
+‎        <div class="wheel" id="wheel">
+‎          <div class="wheel-center">BCC</div>
+‎        </div>
+‎
+‎        <button class="spin-btn" id="spinBtn">
+‎          Tourner la roue
+‎        </button>
+‎
+‎      </div>
+‎
+‎      <!-- DROPDOWNS -->
+‎
+‎      <div class="accordion">
+‎
+‎        <button class="accordion-btn">
+‎          🎁 Coffres Cadeaux
+‎        </button>
+‎
+‎        <div class="accordion-content">
+‎
+‎          <button class="mini-card action-popup">Coffre Bronze</button>
+‎          <button class="mini-card action-popup">Coffre Silver</button>
+‎          <button class="mini-card action-popup">Coffre Gold</button>
+‎          <button class="mini-card action-popup">Coffre Diamond</button>
+‎
+‎        </div>
+‎
+‎      </div>
+‎
+‎      <div class="accordion">
+‎
+‎        <button class="accordion-btn">
+‎          📅 Bonus Quotidien
+‎        </button>
+‎
+‎        <div class="accordion-content">
+‎
+‎          <button class="mini-card action-popup">Jour 1 → 50 BCC</button>
+‎          <button class="mini-card action-popup">Jour 7 → 1000 BCC</button>
+‎
+‎        </div>
+‎
+‎      </div>
+‎
+‎      <div class="accordion">
+‎
+‎        <button class="accordion-btn">
+‎          ⚡ Missions Bonus
+‎        </button>
+‎
+‎        <div class="accordion-content">
+‎
+‎          <button class="mini-card action-popup">Regarder vidéos</button>
+‎          <button class="mini-card action-popup">Inviter amis</button>
+‎          <button class="mini-card action-popup">Scanner QR</button>
+‎
+‎        </div>
+‎
+‎      </div>
+‎
+‎    </section>
+‎
+‎    <!-- MARKET -->
+‎    <section class="page-section hidden" id="marketSection">
+‎
+‎      <div class="coming-box">
+‎        <i class="fa-solid fa-chart-line"></i>
+‎        <h2>Marché BCC</h2>
+‎        <p>Service disponible bientôt</p>
+‎      </div>
+‎
+‎    </section>
+‎
+‎    <!-- PROFILE -->
+‎    <section class="page-section hidden" id="profileSection">
+‎
+‎      <div class="profile-card">
+‎
+‎        <img src="images/avatar-default.jpg" alt="">
+‎
+‎        <h2>Samuel Guei</h2>
+‎
+‎        <p>ID : BCC-00001</p>
+‎
+‎      </div>
+‎
+‎      <div class="profile-form">
+‎
+‎        <input type="text" placeholder="Nom complet">
+‎        <input type="text" placeholder="Pseudo">
+‎        <input type="text" placeholder="Téléphone">
+‎        <input type="email" placeholder="Email">
+‎        <input type="password" placeholder="Mot de passe">
+‎        <input type="text" placeholder="Ville">
+‎
+‎        <button class="save-btn action-popup">
+‎          Enregistrer
+‎        </button>
+‎
+‎      </div>
+‎
+‎    </section>
+‎
+‎  </div>
+‎
+‎  <!-- NAV -->
+‎  <nav class="bottom-nav">
+‎
+‎    <button class="nav-btn active" id="homeBtn">
+‎      <i class="fa-solid fa-house"></i>
+‎    </button>
+‎
+‎    <button class="nav-btn" id="giftBtn">
+‎      <i class="fa-solid fa-gift"></i>
+‎    </button>
+‎
+‎    <button class="center-btn">
+‎      <img src="images/logo-bcc.png" alt="">
+‎    </button>
+‎
+‎    <button class="nav-btn" id="marketBtn">
+‎      <i class="fa-solid fa-chart-line"></i>
+‎    </button>
+‎
+‎    <button class="nav-btn" id="profileBtn">
+‎      <i class="fa-solid fa-user"></i>
+‎    </button>
+‎
+‎  </nav>
+‎
+‎  <!-- MARQUEE -->
+‎  <div class="ticker">
+‎    <marquee>
+‎      Bienvenue sur votre portefeuille de récompense numérique BCC
+‎    </marquee>
+‎  </div>
+‎
+‎  <!-- POPUP -->
+‎  <div class="popup" id="popup">
+‎    Service disponible bientôt
+‎  </div>
+‎
+‎  <script src="script.js"></script>
+‎
+‎</body>
+‎</html>
+‎
